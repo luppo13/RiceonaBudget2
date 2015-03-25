@@ -15,8 +15,7 @@ public class Quickneasy extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quickneasy);
 
-        });
-    }
+   }
 
 
     @Override
