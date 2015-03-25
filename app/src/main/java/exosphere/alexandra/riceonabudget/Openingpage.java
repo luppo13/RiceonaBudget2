@@ -5,6 +5,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
 public class Openingpage extends ActionBarActivity {
@@ -14,7 +16,14 @@ public class Openingpage extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_openingpage);
 
-        startActivity(new Intent(Openingpage. this, Quickneasy.class));
+        Button openQuickNEasyButton = (Button) findViewById(R.id.openQuickNEasy);
+        openQuickNEasyButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(Openingpage.this, Quickneasy.class));
+            }
+        });
     }
 
 
