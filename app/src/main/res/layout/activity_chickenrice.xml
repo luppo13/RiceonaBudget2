@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="exosphere.alexandra.riceonabudget.Chickenrice"
+    android:id="@+id/chickenricetitle"
+    android:background="#ffe4eff1">
+
+    <TextView android:text="Chicken Rice" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="false"
+        android:textSize="30sp"
+        android:id="@+id/textView20"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingredients"
+        android:id="@+id/textView28"
+        android:layout_below="@+id/textView20"
+         />
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/textView28"
+        android:id="@+id/linearLayout">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dip"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView28"
+            android:layout_alignRight="@+id/textView20"
+            android:layout_alignEnd="@+id/textView20"
+            android:layout_marginRight="61dp"
+            android:layout_marginEnd="61dp">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 cups rice"
+                android:id="@+id/checkBox33"
+                android:checked="false"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 cups broccoli"
+                android:id="@+id/checkBox34"
+                android:checked="false"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 1/2 cup water"
+                android:id="@+id/checkBox30"
+                android:checked="false"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 Tbsp Vegetable Oil"
+                android:id="@+id/checkBox16"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 1/4 pound chicken"
+                android:id="@+id/checkBox28"
+                android:checked="false"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/textView20"
+                android:layout_alignEnd="@+id/textView20" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 can Campbell chicken soup"
+                android:id="@+id/checkBox29"
+                android:checked="false"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dip"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+                                        >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="139dp"
+                android:id="@+id/imageView6"
+                android:src="@mipmap/chickenrice"
+                android:layout_below="@+id/textView20"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1/4 tsp Paprika"
+                android:id="@+id/checkBox31"
+                android:checked="false"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pepper to taste"
+                android:id="@+id/checkBox32"
+                android:checked="false"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recipe"
+        android:id="@+id/textView21"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/textView22" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heat the oil in skillet over medium heat. Add chicken until brown. Remove from skillet"
+        android:id="@+id/textView22"
+        android:layout_above="@+id/textView23"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stir the soup, water, paprika and pepper and heat to a boil. Stir in rice and broccoli. Add in chicken cover and let cook for 5 minutes."
+        android:id="@+id/textView23"
+        android:layout_above="@+id/ratingBarchicken"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBarchicken"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

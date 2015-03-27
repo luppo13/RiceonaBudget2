@@ -1,47 +1,38 @@
 package exosphere.alexandra.riceonabudget;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
+import android.widget.RatingBar;
+import android.widget.Toast;
 
 
-public class Quickneasy extends ActionBarActivity {
+public class PumpkinRice extends ActionBarActivity {
+    private static float PumpkinRating = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quickneasy);
+        setContentView(R.layout.activity_pumpkin_rice);
 
-        Button tunaCheck = (Button) findViewById(R.id.tunaCheck);
-        tunaCheck.setOnClickListener(new View.OnClickListener() {
+
+        final RatingBar pumpkinBar = (RatingBar) findViewById(R.id.pumpkinBar);
+        pumpkinBar.setRating(PumpkinRating);
+        pumpkinBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
-            public void onClick(View v) {
-
-                startActivity(new Intent(Quickneasy.this, TunaRice.class));
+            public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
+                PumpkinRating = rating;
+                Toast.makeText(PumpkinRice.this, String.valueOf(rating), Toast.LENGTH_SHORT).show();
             }
         });
-
-        Button chickenCheck = (Button) findViewById(R.id.chickenCheck);
-        chickenCheck.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                startActivity(new Intent(Quickneasy.this, Chickenrice.class));
-            }
-        });
-
-            }
-
+    }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_quickneasy, menu);
+        getMenuInflater().inflate(R.menu.menu_pumpkin_rice, menu);
         return true;
     }
 

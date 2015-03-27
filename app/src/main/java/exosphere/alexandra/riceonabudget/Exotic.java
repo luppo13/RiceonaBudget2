@@ -9,39 +9,37 @@ import android.view.View;
 import android.widget.Button;
 
 
-public class Quickneasy extends ActionBarActivity {
+public class Exotic extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quickneasy);
+        setContentView(R.layout.activity_exotic);
 
-        Button tunaCheck = (Button) findViewById(R.id.tunaCheck);
-        tunaCheck.setOnClickListener(new View.OnClickListener() {
+        Button geelrysCheck = (Button) findViewById(R.id.geelrysCheck);
+        geelrysCheck.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(Quickneasy.this, TunaRice.class));
+                startActivity(new Intent(Exotic.this, Geelrys.class));
             }
         });
 
-        Button chickenCheck = (Button) findViewById(R.id.chickenCheck);
-        chickenCheck.setOnClickListener(new View.OnClickListener() {
+        Button paellaCheck = (Button) findViewById(R.id.paellaCheck);
+        paellaCheck.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(Quickneasy.this, Chickenrice.class));
+                startActivity(new Intent(Exotic.this, Paella.class));
             }
         });
-
-            }
-
+    }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_quickneasy, menu);
+        getMenuInflater().inflate(R.menu.menu_exotic, menu);
         return true;
     }
 

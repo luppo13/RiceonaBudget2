@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="exosphere.alexandra.riceonabudget.Beefvegstirfry"
+    android:id="@+id/Beefvegstir"
+    android:background="#ffe4eff1">
+
+    <TextView android:text="Beef and Veggie Stir Fry" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/beeftext"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView7"
+        android:layout_marginTop="25dp"
+        android:src="@mipmap/beefveg"
+        android:layout_below="@+id/beeftext"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 Tbsp olive oil"
+        android:id="@+id/checkBox35"
+        android:checked="false"
+        android:layout_alignTop="@+id/imageView7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="16 oz mixed veggies"
+        android:id="@+id/checkBox36"
+        android:layout_below="@+id/checkBox35"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 Tbsp water"
+        android:id="@+id/checkBox37"
+        android:checked="false"
+        android:layout_below="@+id/checkBox36"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 cup stir fry sauce"
+        android:id="@+id/checkBox38"
+        android:layout_below="@+id/checkBox37"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 tsp cornstarch"
+        android:id="@+id/checkBox39"
+        android:checked="false"
+        android:layout_below="@+id/imageView7"
+        android:layout_alignRight="@+id/imageView7"
+        android:layout_alignEnd="@+id/imageView7" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 cups cubed roast beef"
+        android:id="@+id/checkBox40"
+        android:layout_below="@+id/checkBox39"
+        android:layout_alignLeft="@+id/checkBox39"
+        android:layout_alignStart="@+id/checkBox39"
+        android:checked="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recipe"
+        android:id="@+id/textView24"
+        android:layout_marginTop="65dp"
+        android:layout_below="@+id/checkBox40"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heat oil in skillet. Add vegetables and water. Stir and cook for 3 minutes."
+        android:id="@+id/textView25"
+        android:layout_below="@+id/textView24"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mix stir fry sauce and cornstarch in a small bowl. Add to skillet and stir. Add beef and stir."
+        android:id="@+id/textView26"
+        android:layout_below="@+id/textView25"
+        android:layout_alignRight="@+id/textView25"
+        android:layout_alignEnd="@+id/textView25" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cover and cook over low heat for 5 min. Serve with rice"
+        android:id="@+id/textView27"
+        android:layout_below="@+id/textView26"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBarbeef"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/textView24"
+        android:layout_toEndOf="@+id/textView24" />
+
+</RelativeLayout>

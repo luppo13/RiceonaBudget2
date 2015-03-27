@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="exosphere.alexandra.riceonabudget.Paella"
+    android:id="@+id/paellaact"
+    android:background="#ffe4eff1">
+
+    <TextView android:text="Paella" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/paellaTitle"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView5"
+        android:src="@mipmap/paellapic"
+        android:layout_below="@+id/paellaTitle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:minHeight="64dp"
+        android:maxWidth="64dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Onion"
+        android:id="@+id/checkBox22"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carrots"
+        android:id="@+id/checkBox23"
+        android:layout_below="@+id/checkBox22"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peas"
+        android:id="@+id/checkBox24"
+        android:layout_below="@+id/checkBox23"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shrimp/Seafood"
+        android:id="@+id/checkBox25"
+        android:layout_below="@+id/checkBox24"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 tbsp Turmeric"
+        android:id="@+id/checkBox26"
+        android:layout_above="@+id/checkBox25"
+        android:layout_alignRight="@+id/imageView5"
+        android:layout_alignEnd="@+id/imageView5"
+        android:layout_marginRight="33dp"
+        android:layout_marginEnd="33dp"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 tsp Saffron"
+        android:id="@+id/checkBox27"
+        android:layout_below="@+id/checkBox26"
+        android:layout_alignLeft="@+id/checkBox26"
+        android:layout_alignStart="@+id/checkBox26"
+        android:checked="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recipe"
+        android:id="@+id/textView17"
+        android:layout_below="@+id/checkBox25"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="34dp"
+        android:textSize="15sp"
+        android:textIsSelectable="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prepare the rice. Once cooked add the turmeric and the saffron. Meanwhile defrost shrimp and fry the onion, carrots, and peas. Put it on the side and in the same frying pan throw shrimps and other seafood inside. Combine with the veggies and then add the rice and mix. Cook for another 3 minutes and done."
+        android:id="@+id/textView18"
+        android:layout_below="@+id/textView17"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingredients"
+        android:id="@+id/textView19"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBarpaella"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

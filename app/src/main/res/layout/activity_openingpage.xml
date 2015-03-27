@@ -4,12 +4,14 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="exosphere.alexandra.riceonabudget.Openingpage">
+    tools:context="exosphere.alexandra.riceonabudget.Openingpage"
+    android:background="#ffe4eff1"
+    android:id="@+id/openingtitle">
 
     <TextView android:text="Rice Options" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView"
-        android:textSize="30sp" />
+        android:textSize="35sp" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -18,31 +20,31 @@
         android:text="Quick n&apos; Easy"
         android:id="@+id/openQuickNEasy"
         android:maxLength="@integer/abc_config_activityDefaultDur"
-        android:layout_above="@+id/button3"
-        android:layout_alignLeft="@+id/button3"
-        android:layout_alignStart="@+id/button3"
-        android:layout_alignRight="@+id/button3"
-        android:layout_alignEnd="@+id/button3" />
+        android:layout_above="@+id/exoticButton"
+        android:layout_alignLeft="@+id/exoticButton"
+        android:layout_alignStart="@+id/exoticButton"
+        android:layout_alignRight="@+id/exoticButton"
+        android:layout_alignEnd="@+id/exoticButton" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Stir Fry"
-        android:id="@+id/button2"
-        android:layout_below="@+id/button3"
+        android:id="@+id/stirfryButton"
+        android:layout_below="@+id/exoticButton"
         android:maxLength="@integer/abc_config_activityDefaultDur"
-        android:layout_alignRight="@+id/button3"
-        android:layout_alignEnd="@+id/button3"
-        android:layout_alignLeft="@+id/button3"
-        android:layout_alignStart="@+id/button3" />
+        android:layout_alignRight="@+id/exoticButton"
+        android:layout_alignEnd="@+id/exoticButton"
+        android:layout_alignLeft="@+id/exoticButton"
+        android:layout_alignStart="@+id/exoticButton" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Exotic/Adverturous"
-        android:id="@+id/button3"
+        android:id="@+id/exoticButton"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
@@ -51,12 +53,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Vegeterian"
-        android:id="@+id/button4"
+        android:id="@+id/vegButton"
         android:maxLength="@integer/abc_config_activityDefaultDur"
-        android:layout_below="@+id/button2"
-        android:layout_alignRight="@+id/button2"
-        android:layout_alignEnd="@+id/button2"
-        android:layout_alignLeft="@+id/button2"
-        android:layout_alignStart="@+id/button2" />
+        android:layout_below="@+id/stirfryButton"
+        android:layout_alignRight="@+id/stirfryButton"
+        android:layout_alignEnd="@+id/stirfryButton"
+        android:layout_alignLeft="@+id/stirfryButton"
+        android:layout_alignStart="@+id/stirfryButton" />
 
 </RelativeLayout>

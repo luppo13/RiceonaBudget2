@@ -5,4 +5,15 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_openingpage">Openingpage</string>
     <string name="title_activity_quickneasy">Quickneasy</string>
+    <string name="title_activity_tuna_rice">TunaRice</string>
+    <string name="title_activity_vegetarian">Vegetarian</string>
+    <string name="title_activity_pumpkin_rice">PumpkinRice</string>
+    <string name="title_activity_exotic">Exotic</string>
+    <string name="title_activity_stirfry">Stirfry</string>
+    <string name="title_activity_chickenrice">Chickenrice</string>
+    <string name="title_activity_chickenas">Chickenas</string>
+    <string name="title_activity_geelrys">Geelrys</string>
+    <string name="title_activity_paella">Paella</string>
+    <string name="title_activity_curryrice">Curryrice</string>
+    <string name="title_activity_beefvegstirfry">Beefvegstirfry</string>
 </resources>

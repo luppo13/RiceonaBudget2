@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="exosphere.alexandra.riceonabudget.Geelrys"
+    android:id="@+id/geelrystitle"
+    android:background="#ffe4eff1">
+
+    <TextView android:text="Geelrys" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:id="@+id/textView14" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView4"
+        android:src="@mipmap/geelryspic"
+        android:layout_alignRight="@+id/textView16"
+        android:layout_alignEnd="@+id/textView16"
+        android:layout_alignTop="@+id/textView14"
+        android:layout_alignBottom="@+id/textView15" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chicken"
+        android:id="@+id/checkBox"
+        android:checked="false"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1/2 cup Raisins"
+        android:id="@+id/checkBox3"
+        android:layout_alignParentStart="true"
+        android:checked="false"
+        android:layout_below="@+id/checkBox"
+        android:layout_alignParentLeft="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 tbsp Butter"
+        android:id="@+id/checkBox20"
+        android:layout_alignParentStart="true"
+        android:checked="false"
+        android:layout_below="@+id/checkBox3"
+        android:layout_alignParentLeft="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 tsp Salt"
+        android:id="@+id/checkBox21"
+        android:layout_alignParentStart="true"
+        android:checked="false"
+        android:layout_below="@+id/checkBox20"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recipe"
+        android:id="@+id/textView15"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/checkBox21"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/checkBox20"
+        android:layout_alignEnd="@+id/checkBox20" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Boil the chicken and pull the chicken meat off the bones.  Cook the rice and while waiting wash the raisins, and after about 20 minutes add the raisins. Add butter* to the rice and mix it. Cover and cook until the rice is done. *Can be substituted with oil."
+        android:id="@+id/textView16"
+        android:layout_below="@+id/textView15"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="27dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingredients"
+        android:id="@+id/textView13"
+        android:layout_below="@+id/textView14"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBargeelrys"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

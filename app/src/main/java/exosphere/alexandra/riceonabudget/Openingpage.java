@@ -20,8 +20,31 @@ public class Openingpage extends ActionBarActivity {
         openQuickNEasyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 startActivity(new Intent(Openingpage.this, Quickneasy.class));
+            }
+        });
+
+        Button vegButton = (Button) findViewById(R.id.vegButton);
+        vegButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Openingpage.this, Vegetarian.class));
+            }
+        });
+
+        Button exoticButton = (Button) findViewById(R.id.exoticButton);
+        exoticButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Openingpage.this, Exotic.class));
+            }
+        });
+
+        Button stirfryButton = (Button) findViewById(R.id.stirfryButton);
+        stirfryButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Openingpage.this, Stirfry.class));
             }
         });
     }

@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/rice_image1"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
@@ -23,6 +23,50 @@
         <activity
             android:name=".Quickneasy"
             android:label="@string/title_activity_quickneasy" >
+        </activity>
+        <activity
+            android:name=".TunaRice"
+            android:label="@string/title_activity_tuna_rice" >
+        </activity>
+        <activity
+            android:name=".Vegetarian"
+            android:label="@string/title_activity_vegetarian" >
+        </activity>
+        <activity
+            android:name=".PumpkinRice"
+            android:label="@string/title_activity_pumpkin_rice" >
+        </activity>
+        <activity
+            android:name=".Exotic"
+            android:label="@string/title_activity_exotic" >
+        </activity>
+        <activity
+            android:name=".Stirfry"
+            android:label="@string/title_activity_stirfry" >
+        </activity>
+        <activity
+            android:name=".Chickenrice"
+            android:label="@string/title_activity_chickenrice" >
+        </activity>
+        <activity
+            android:name=".Chickenas"
+            android:label="@string/title_activity_chickenas" >
+        </activity>
+        <activity
+            android:name=".Geelrys"
+            android:label="@string/title_activity_geelrys" >
+        </activity>
+        <activity
+            android:name=".Paella"
+            android:label="@string/title_activity_paella" >
+        </activity>
+        <activity
+            android:name=".Curryrice"
+            android:label="@string/title_activity_curryrice" >
+        </activity>
+        <activity
+            android:name=".Beefvegstirfry"
+            android:label="@string/title_activity_beefvegstirfry" >
         </activity>
     </application>
 
