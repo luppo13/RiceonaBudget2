@@ -7,6 +7,8 @@ import android.view.MenuItem;
 import android.widget.RatingBar;
 import android.widget.Toast;
 
+import exosphere.alexandra.riceonabudget.model.Ratings;
+
 
 public class Curryrice extends ActionBarActivity {
     private static float curryRating = 0;
@@ -15,14 +17,14 @@ public class Curryrice extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_curryrice);
-
-
+        Ratings.RATINGS.readFile(this);
         RatingBar ratingBarcurry = (RatingBar) findViewById(R.id.ratingBarcurry);
-        ratingBarcurry.setRating(curryRating);
+        ratingBarcurry.setRating(Ratings.RATINGS.curryRating);
         ratingBarcurry.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
             public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
-                curryRating = rating;
+                Ratings.RATINGS.curryRating = rating;
+                Ratings.RATINGS.saveFile(Curryrice.this);
                 Toast.makeText(Curryrice.this, String.valueOf(rating), Toast.LENGTH_SHORT).show();
             }
         });

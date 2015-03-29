@@ -7,6 +7,8 @@ import android.view.MenuItem;
 import android.widget.RatingBar;
 import android.widget.Toast;
 
+import exosphere.alexandra.riceonabudget.model.Ratings;
+
 
 public class Beefvegstirfry extends ActionBarActivity {
     private static float beefRating = 0;
@@ -14,14 +16,14 @@ public class Beefvegstirfry extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_beefvegstirfry);
-
-
+        Ratings.RATINGS.readFile(this);
         RatingBar ratingBarbeef = (RatingBar) findViewById(R.id.ratingBarbeef);
-        ratingBarbeef.setRating(beefRating);
+        ratingBarbeef.setRating(Ratings.RATINGS.beefRating);
         ratingBarbeef.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
             public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
-                beefRating = rating;
+               Ratings.RATINGS.beefRating = rating;
+                Ratings.RATINGS.saveFile(Beefvegstirfry.this);
                 Toast.makeText(Beefvegstirfry.this, String.valueOf(rating), Toast.LENGTH_SHORT).show();
             }
         });

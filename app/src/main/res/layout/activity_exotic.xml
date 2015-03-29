@@ -1,28 +1,37 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="exosphere.alexandra.riceonabudget.Exotic"
-    android:background="#ffe4eff1">
+    >
 
     <TextView android:text="Exotic/Adventurous" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="40sp"
-        android:id="@+id/textView32" />
+        android:id="@+id/textView32"
+        android:textColor="#ff160203"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <CheckBox
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Geelrys"
         android:id="@+id/geelrysCheck"
-        android:layout_marginTop="87dp"
+        android:layout_marginTop="88dp"
         android:checked="false"
         android:textSize="30sp"
+        android:textColor="#ff160203"
+        android:typeface="serif"
         android:layout_below="@+id/textView32"
-        android:layout_alignRight="@+id/textView32"
-        android:layout_alignEnd="@+id/textView32" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="55dp"
+        android:layout_marginStart="55dp" />
 
     <CheckBox
         android:layout_width="match_parent"
@@ -32,9 +41,11 @@
         android:checked="false"
         android:singleLine="false"
         android:textSize="30sp"
-        android:layout_marginTop="77dp"
+        android:textColor="#ff160203"
+        android:layout_marginTop="104dp"
+        android:typeface="serif"
         android:layout_below="@+id/geelrysCheck"
-        android:layout_alignRight="@+id/geelrysCheck"
-        android:layout_alignEnd="@+id/geelrysCheck" />
+        android:layout_alignLeft="@+id/geelrysCheck"
+        android:layout_alignStart="@+id/geelrysCheck" />
 
 </RelativeLayout>

@@ -7,6 +7,8 @@ import android.view.MenuItem;
 import android.widget.RatingBar;
 import android.widget.Toast;
 
+import exosphere.alexandra.riceonabudget.model.Ratings;
+
 
 public class Paella extends ActionBarActivity {
     private static float paellaRating = 0;
@@ -14,14 +16,14 @@ public class Paella extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_paella);
-
-
+        Ratings.RATINGS.readFile(this);
         RatingBar ratingBarpaella = (RatingBar) findViewById(R.id.ratingBarpaella);
-        ratingBarpaella.setRating(paellaRating);
+        ratingBarpaella.setRating(Ratings.RATINGS.paellaRating);
         ratingBarpaella.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
             public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
-                paellaRating = rating;
+               Ratings.RATINGS.paellaRating = rating;
+                Ratings.RATINGS.saveFile(Paella.this);
                 Toast.makeText(Paella.this, String.valueOf(rating), Toast.LENGTH_SHORT).show();
             }
         });

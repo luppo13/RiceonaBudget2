@@ -4,14 +4,30 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.RatingBar;
+import android.widget.Toast;
+
+import exosphere.alexandra.riceonabudget.model.Ratings;
 
 
 public class Chickenas extends ActionBarActivity {
+    private static float chickenasRating = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chickenas);
+        Ratings.RATINGS.readFile(this);
+        RatingBar ratingBarchickenas = (RatingBar) findViewById(R.id.ratingBarchickenas);
+        ratingBarchickenas.setRating(Ratings.RATINGS.chickenasRating);
+        ratingBarchickenas.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+            @Override
+            public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
+                Ratings.RATINGS.chickenasRating = rating;
+                Ratings.RATINGS.saveFile(Chickenas.this);
+                Toast.makeText(Chickenas.this, String.valueOf(rating), Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
 

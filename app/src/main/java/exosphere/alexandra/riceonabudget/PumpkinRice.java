@@ -7,6 +7,8 @@ import android.view.MenuItem;
 import android.widget.RatingBar;
 import android.widget.Toast;
 
+import exosphere.alexandra.riceonabudget.model.Ratings;
+
 
 public class PumpkinRice extends ActionBarActivity {
     private static float PumpkinRating = 0;
@@ -15,14 +17,14 @@ public class PumpkinRice extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pumpkin_rice);
-
-
+        Ratings.RATINGS.readFile(this);
         final RatingBar pumpkinBar = (RatingBar) findViewById(R.id.pumpkinBar);
-        pumpkinBar.setRating(PumpkinRating);
+        pumpkinBar.setRating(Ratings.RATINGS.pumpkinRating);
         pumpkinBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
             public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
-                PumpkinRating = rating;
+               Ratings.RATINGS.pumpkinRating = rating;
+                Ratings.RATINGS.saveFile(PumpkinRice.this);
                 Toast.makeText(PumpkinRice.this, String.valueOf(rating), Toast.LENGTH_SHORT).show();
             }
         });

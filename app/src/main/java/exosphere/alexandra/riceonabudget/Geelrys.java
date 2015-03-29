@@ -7,6 +7,8 @@ import android.view.MenuItem;
 import android.widget.RatingBar;
 import android.widget.Toast;
 
+import exosphere.alexandra.riceonabudget.model.Ratings;
+
 
 public class Geelrys extends ActionBarActivity {
     private static float geelrysRating = 0;
@@ -14,13 +16,14 @@ public class Geelrys extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_geelrys);
-
+        Ratings.RATINGS.readFile(this);
         RatingBar ratingBargeelrys = (RatingBar) findViewById(R.id.ratingBargeelrys);
-        ratingBargeelrys.setRating(geelrysRating);
+        ratingBargeelrys.setRating(Ratings.RATINGS.geelrysRating);
         ratingBargeelrys.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
             public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
-                geelrysRating = rating;
+                Ratings.RATINGS.geelrysRating = rating;
+                Ratings.RATINGS.saveFile(Geelrys.this);
                 Toast.makeText(Geelrys.this, String.valueOf(rating), Toast.LENGTH_SHORT).show();
             }
         });
