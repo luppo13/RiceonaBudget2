@@ -22,30 +22,31 @@
         android:layout_marginLeft="143dp"
         android:layout_marginStart="143dp" />
 
-    <CheckBox
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tuna Rice"
         android:id="@+id/tunaCheck"
-        android:checked="false"
-        android:textSize="30sp"
-        android:typeface="serif"
+        android:layout_marginLeft="43dp"
+        android:layout_marginStart="43dp"
         android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/textView2"
-        android:layout_alignStart="@+id/textView2" />
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:textSize="15sp" />
 
-    <CheckBox
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Chicken Rice"
-        android:id="@+id/chickenCheck"
-        android:checked="false"
-        android:textSize="30sp"
-        android:focusable="true"
-        android:typeface="serif"
-        android:layout_marginTop="40dp"
+        android:id="@+id/chickenriceCheck"
+        android:layout_marginTop="41dp"
         android:layout_below="@+id/tunaCheck"
-        android:layout_alignRight="@+id/textView2"
-        android:layout_alignEnd="@+id/textView2" />
+        android:layout_alignLeft="@+id/tunaCheck"
+        android:layout_alignStart="@+id/tunaCheck"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="15sp" />
 
 </RelativeLayout>

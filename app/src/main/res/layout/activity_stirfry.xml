@@ -12,40 +12,34 @@
         android:layout_height="wrap_content"
         android:textSize="40sp"
         android:textColor="#fffbfbfb"
+        android:textStyle="bold"
+        android:id="@+id/textView33"
         android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/chickenCheck"
-        android:layout_alignEnd="@+id/chickenCheck"
-        android:layout_marginRight="53dp"
-        android:layout_marginEnd="53dp"
-        android:textStyle="bold" />
+        android:layout_alignLeft="@+id/beefVegCheck"
+        android:layout_alignStart="@+id/beefVegCheck" />
 
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Chicken and Asparagus Stir Fry"
-        android:id="@+id/chickenCheck"
-        android:checked="false"
-        android:textSize="30sp"
-        android:textColor="#fffbfbfb"
-        android:layout_marginTop="106dp"
-        android:layout_marginLeft="113dp"
-        android:layout_marginStart="113dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:typeface="serif" />
-
-    <CheckBox
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Beef and Veggie Stir Fry"
         android:id="@+id/beefVegCheck"
-        android:checked="false"
-        android:textSize="30sp"
-        android:textColor="#fffbfbfb"
-        android:layout_marginTop="26dp"
-        android:typeface="serif"
-        android:layout_below="@+id/chickenCheck"
+        android:layout_marginTop="115dp"
+        android:layout_below="@+id/textView33"
+        android:layout_alignRight="@+id/chickenCheck"
+        android:layout_alignEnd="@+id/chickenCheck"
         android:layout_alignLeft="@+id/chickenCheck"
-        android:layout_alignStart="@+id/chickenCheck" />
+        android:layout_alignStart="@+id/chickenCheck"
+        android:textSize="15sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chicken and Asparagus Stir Fry"
+        android:id="@+id/chickenCheck"
+        android:layout_marginTop="66dp"
+        android:layout_below="@+id/beefVegCheck"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="15sp" />
 
 </RelativeLayout>

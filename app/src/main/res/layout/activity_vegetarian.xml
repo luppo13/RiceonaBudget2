@@ -6,7 +6,7 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="exosphere.alexandra.riceonabudget.Vegetarian"
     android:id="@+id/PumpkinRice"
-    >
+    android:background="@drawable/wowoz">
 
     <TextView android:text="VEGETARIAN" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -18,28 +18,27 @@
         android:textColor="#ff212121"
         android:textStyle="bold" />
 
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pumpkin rice"
-        android:id="@+id/pumpkinCheck"
-        android:textSize="30sp"
-        android:layout_above="@+id/curryCheck"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="47dp"
-        android:layout_marginStart="47dp"
-        android:layout_marginBottom="15dp" />
 
-    <CheckBox
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Curry rice"
-        android:id="@+id/curryCheck"
-        android:checked="false"
-        android:textSize="30sp"
+        android:text="Pumpkin Rice"
+        android:id="@+id/pumpkinCheck"
         android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Curry Rice"
+        android:id="@+id/curryCheck"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/pumpkinCheck"
+        android:layout_alignRight="@+id/pumpkinCheck"
+        android:layout_alignEnd="@+id/pumpkinCheck"
         android:layout_alignLeft="@+id/pumpkinCheck"
-        android:layout_alignStart="@+id/pumpkinCheck" />
+        android:layout_alignStart="@+id/pumpkinCheck"
+        android:textSize="15sp" />
 
 </RelativeLayout>

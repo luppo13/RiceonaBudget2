@@ -25,8 +25,8 @@ public class Quickneasy extends ActionBarActivity {
             }
         });
 
-        Button chickenCheck = (Button) findViewById(R.id.chickenCheck);
-        chickenCheck.setOnClickListener(new View.OnClickListener() {
+        Button chickenriceCheck = (Button) findViewById(R.id.chickenriceCheck);
+        chickenriceCheck.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
